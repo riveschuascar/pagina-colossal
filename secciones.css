@@ -1,0 +1,21 @@
+/*hero*/
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+#hero img {
+    max-width: 60%;
+    height: auto;
+}
+
+/*section 1*/
+#section-1 .degradado {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 70%, rgba(239, 122, 55, 1) 100%);
+    padding: 50px;
+    font-size: 2rem;
+}

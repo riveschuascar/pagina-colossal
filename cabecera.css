@@ -1,0 +1,90 @@
+nav.nav-estatico {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    font-family: 'Courier New', monospace;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 12px;
+}
+
+#logo img {
+    height: 56px;
+    width: auto;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 8px;
+    min-width: max-content;
+}
+
+.final {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 16px;
+}
+
+.indice {
+    margin-left: 16px;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.columna a {
+    color: #eee;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.numero-columna {
+    color: #888;
+    font-size: 0.75rem;
+}
+
+.pagina-indice {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 20px;
+    display: none;
+}
+
+.pagina-indice .titulo {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 4px;
+}
+
+.pagina-indice .menu {
+    margin-bottom: 16px;
+}
