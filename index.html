@@ -5,12 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aether Industries</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="cabecera.css">
   <link rel="stylesheet" href="secciones.css">
+  <link rel="stylesheet" href="pie.css">
 </head>
 
 <body style="margin: 0px;">
-  <!--
   <header>
     <nav class="nav-estatico">
       <div class="contenedor-nav">
@@ -50,7 +52,7 @@
           </a>
         </div>
         <div class="indice">
-
+          Indice
         </div>
       </div>
       <div class="pagina-indice">
@@ -60,10 +62,11 @@
         <div class="menu"></div>
       </div>
     </nav>
-  </header> < -->
+  </header>
+
   <div class="page-section">
     <div id="hero">
-      <div><video src="https://www.youtube.com/watch?v=ld938ngjdl8" autoplay muted loop></video></div>
+      <div><video src="img/video.mp4" autoplay muted noloop></video></div>
       <div><img src="img/nombre.png" alt="AETHER"></div>
     </div>
   </div>
@@ -73,6 +76,60 @@
       </div>
     </section>
   </div>
+
+  <footer>
+    <div class="fila">
+      <div class="columna">
+        <div id="caja-boletin">
+          <div class="titulo">Recibir actualizaciones sobre el boletin de noticias.</div>
+          <form id="form-correo"></form>
+          <input id="correo" type="email" name="" id="" placeholder="Ingresar e-mail">
+          <input type="submit" value="Enviar">
+        </div>
+        <span style="color:#bcbcbc;">Tras suscribirse a nuestro boletin informativo, es posible que tambien reciba
+          encuestas ocasionales y correos electronicos tematicos especiales de Aether. Entiende y acepta que Aether
+          puede utilizar
+          su informacion de acuerdo con nuestra <a href="#">Politica de Privacidad</a>. Puede cancelar su suscripcion en
+          cualquier momento haciendo clic en el boton "Cancelar suscripcion" que se encuentra al final de cualquier
+          correo electronico que reciba de Colossal.</span><br><br>
+      </div> <!--columna-->
+
+      <div class="columna logo">
+        <a class="footer-logo" href="#"><img src="img/nombre.png" alt=""></a>
+      </div> <!--columna-->
+
+      <div class="columna">
+        <div id="caja-consultas">
+          <a target="_blank" href="#">consultas generales</a>
+          <a target="_blank" href="#">consultas de prensa</a>
+        </div>
+      </div> <!--columna-->
+    </div> <!--fila-->
+    <hr>
+    <div class="fila abajo">
+      <div class="columna">
+        <div class="caja-menu-footer">
+          <ul id="menu-footer" class="menu">
+            <li class="menu-item"><a href="">Terminos de Uso</a></li>
+            <li class="menu-item"><a href="">Asesores</a></li>
+            <li class="menu-item"><a href="">Politica de Privacidad</a></li>
+            <li class="menu-item"><a href="">Empleos en Aether</a></li>
+            <li class="menu-item"><a href="">Instagram</a></li>
+            <li class="menu-item"><a href="">X</a></li>
+            <li class="menu-item"><a href="">Facebook</a></li>
+            <li class="menu-item"><a href="">LinkedIn</a></li>
+            <li class="menu-item"><a href="">YouTube</a></li>
+          </ul>
+        </div>
+      </div> <!--columna-->
+      <div class="columna contacto">
+        Copyright © 2025 Aether Inc. Todos los derechos reservados.
+        <br>
+        <br>
+        <a target="_blank" href="#">Sitio hecho por HRE</a>
+      </div> <!--columna-->
+    </div> <!--fila-->
+  </footer>
 </body>
 
 </html>

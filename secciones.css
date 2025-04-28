@@ -29,6 +29,7 @@
     display: block;
     max-width: 60%;
     height: auto;
+    mix-blend-mode: difference;
 }
 
 /*section 1*/

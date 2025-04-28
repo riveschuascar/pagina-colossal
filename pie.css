@@ -1,0 +1,66 @@
+footer {
+    background-color: #000;
+}
+
+footer .columna .logo {
+    flex: 0 0 50%;
+}
+
+footer .footer-logo {
+    width: 30%;
+    filter: invert(100%);
+}
+
+footer #caja-boletin .titulo {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: clamp(10px, 1vw, 20px);
+}
+
+footer #caja-consultas a {
+    font-family: 'NB Architekt Std';
+    color: #888;
+}
+
+footer #caja-consultas a:hover {
+    font-family: 'NB Architekt Std';
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+footer .abajo {
+    color: #888;
+}
+
+footer .abajo a {
+    color: #888;
+    display: block;
+    font-size: clamp(10px, 0.8vw, 16px);
+    padding: 0 0 clamp(-10px, 1vw, 10px);
+}
+
+footer .abajo a:hover {
+    color: #fff;
+}
+
+footer .abajo li {
+    display: inline-block;
+    width: 30%;
+}
+
+footer .abajo li a {
+    font-size: clamp(10px, 0.6vw, 12px);
+    font-family: 'NB Architekt Std';
+    letter-spacing: 0.07vw;
+    border-bottom: 2px solid transparent;
+}
+
+footer li:hover {
+    border-bottom: 2px solid #fff;
+}
+
+@media (min-width: 1200px) {
+    .contacto{
+        max-width: 33.333333%;
+    }
+}
