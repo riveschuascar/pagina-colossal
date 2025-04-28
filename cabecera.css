@@ -5,7 +5,7 @@ nav.nav-estatico {
     z-index: 1000;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(8px);
-    font-family: 'Courier New', monospace;
+    font-family: 'NB Architek Std';
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -17,12 +17,14 @@ nav.nav-estatico {
     gap: 12px;
 }
 
+/* Logo styles */
 #logo img {
     height: 56px;
     width: auto;
 }
 
-header .columna {
+/* Group styles */
+.grupo {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -35,21 +37,7 @@ header .columna {
     padding-left: 16px;
 }
 
-.indice {
-    margin-left: 16px;
-    padding: 8px 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-size: 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: monospace;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-header .columna a {
+.grupo a {
     color: #eee;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -61,23 +49,77 @@ header .columna a {
     transition: color 0.3s ease;
 }
 
-.numero-columna {
+.numero-grupo {
     color: #888;
     font-size: 0.75rem;
 }
 
-.pagina-indice {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    color: white;
-    padding: 20px;
-    display: none;
+/* Index/Indice dropdown styles */
+.indice-container {
+    position: relative;
+    margin-left: 16px;
 }
 
-.pagina-indice .titulo {
+.indice-checkbox {
+    display: none; /* Hide the checkbox */
+}
+
+.indice-label {
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'NB Architek Std';
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none; /* Prevents text selection */
+}
+
+.indice-label:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.icono {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* This rotates the + to an x when menu is open */
+.indice-checkbox:checked ~ .indice-label .icono {
+    transform: rotate(45deg);
+}
+
+/* Initial state - hidden */
+.pagina-indice {
+    position: absolute;
+    right: 0;
+    top: clamp(0px, 5.5vw, 110px);
+    padding: clamp(15px, 1.5vw, 30px);
+    width: clamp(300px, 22.8vw, 458px);
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    z-index: 10000;
+    font-family: "NB Architekt Std", monospace;
+    color: #FFF;
+    font-size: clamp(12px, 0.85vw, 16px);
+    max-height: calc(100vh - 4.2vw);
+    overflow: auto;
+}
+
+/* When checkbox is checked - visible */
+.indice-checkbox:checked ~ .pagina-indice {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Style for menu items */
+.titulo {
     font-weight: bold;
     margin-bottom: 8px;
     font-size: 14px;
@@ -85,6 +127,22 @@ header .columna a {
     padding-bottom: 4px;
 }
 
-.pagina-indice .menu {
+.menu {
     margin-bottom: 16px;
+}
+
+.menu-item {
+    padding: 4px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #eee;
+}
+
+.menu-item:hover {
+    color: #ccc;
+}
+
+.sub-item {
+    padding-left: 20px;
 }
