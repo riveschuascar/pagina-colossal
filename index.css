@@ -1,0 +1,181 @@
+#hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+}
+
+#hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#hero .logo-nombre {
+    position: absolute;
+    bottom: clamp(-30px, 1.5vw, 30px);
+    left: 15%;
+    mix-blend-mode: difference;
+    width: 100%;
+}
+
+#hero .logo-nombre img {
+    display: block;
+    width: 70%;
+    filter: invert(100%);
+}
+
+#section-1 .degradado {
+    min-height: 150vh;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 70%, rgba(239, 122, 55, 1) 100%);
+    padding: 50px;
+    font-size: 2rem;
+}
+
+.conservation-section {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+/* Header section with background image */
+.conservation-header {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.conservation-header img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.section-number,
+.section-title {
+    position: absolute;
+    top: 20px;
+    font-family: 'NB Architekt Std', monospace;
+    font-size: 14px;
+    color: #fff;
+}
+
+.section-number {
+    left: 20px;
+}
+
+.section-title {
+    right: 20px;
+    z-index: 10;
+}
+
+.conservation-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    font-size: clamp(40px, 8vw, 80px);
+    font-family: 'NB Architekt Std', monospace;
+    text-transform: uppercase;
+    line-height: 0.9;
+    z-index: 5;
+}
+
+/* Partners content area */
+.partners-content {
+    display: flex;
+    padding: 40px 0;
+}
+
+.partners-left {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.partners-right {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.partner-details-header {
+    color: #ef7a37;
+    /* Using the orange color from your gradient */
+    font-family: 'NB Architekt Std', monospace;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(0.9);
+}
+
+.partners-text {
+    max-width: 90%;
+    font-family: 'NB Architekt Std', sans-serif;
+}
+
+.partners-text p {
+    font-size: clamp(16px, 2vw, 24px);
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 767px) {
+    .partners-content {
+        flex-direction: column;
+    }
+
+    .conservation-header img {
+        width: 100%;
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partner-logo {
+        height: 60px;
+    }
+
+    .partners-text {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #hero .logo-nombre img {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #hero .logo-nombre {
+        left: 7.5%;
+        bottom: 3vw;
+    }
+}

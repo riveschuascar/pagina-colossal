@@ -61,7 +61,8 @@ nav.nav-estatico {
 }
 
 .indice-checkbox {
-    display: none; /* Hide the checkbox */
+    display: none;
+    /* Hide the checkbox */
 }
 
 .indice-label {
@@ -75,7 +76,8 @@ nav.nav-estatico {
     display: flex;
     align-items: center;
     gap: 8px;
-    user-select: none; /* Prevents text selection */
+    user-select: none;
+    /* Prevents text selection */
 }
 
 .indice-label:hover {
@@ -88,15 +90,14 @@ nav.nav-estatico {
 }
 
 /* This rotates the + to an x when menu is open */
-.indice-checkbox:checked ~ .indice-label .icono {
+.indice-checkbox:checked~.indice-label .icono {
     transform: rotate(45deg);
 }
 
-/* Initial state - hidden */
 .pagina-indice {
     position: absolute;
-    right: 0;
-    top: clamp(0px, 5.5vw, 110px);
+    right: -30%;
+    top: 160%;
     padding: clamp(15px, 1.5vw, 30px);
     width: clamp(300px, 22.8vw, 458px);
     backdrop-filter: blur(20px);
@@ -108,22 +109,18 @@ nav.nav-estatico {
     font-family: 'NB Architekt Std';
     color: #fff;
     font-size: clamp(12px, 0.85vw, 16px);
-    max-height: calc(100vh - 4.2vw);
-    overflow: auto;
 }
 
-/* When checkbox is checked - visible */
-.indice-checkbox:checked ~ .pagina-indice {
+.indice-checkbox:checked~.pagina-indice {
     opacity: 1;
     pointer-events: auto;
 }
 
-/* Style for menu items */
 .titulo {
     font-weight: bold;
     margin-bottom: 8px;
     font-size: 14px;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #fff;
     padding-bottom: 4px;
 }
 
@@ -145,4 +142,50 @@ nav.nav-estatico {
 
 .sub-item {
     padding-left: 20px;
+}
+
+/* Your existing CSS remains the same */
+
+/* Add these responsive styles at the end of your CSS file */
+@media only screen and (max-width: 767px) {
+    .grupo:not(#logo) {
+        display: none;
+    }
+
+    .contenedor-nav {
+        justify-content: space-between;
+        padding: 10px 16px;
+    }
+
+    #logo img {
+        height: 42px;
+    }
+
+    .indice-container {
+        margin-left: 0;
+    }
+
+    .pagina-indice {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100vw;
+        right: -60px;
+        top: 128%;
+    }
+
+    .menu-item {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    .sub-item {
+        padding-left: 15px;
+    }
+
+    .indice-label {
+        padding: 10px 14px;
+    }
+
+    nav.nav-estatico {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
