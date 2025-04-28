@@ -5,7 +5,7 @@ nav.nav-estatico {
     z-index: 1000;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(8px);
-    font-family: 'NB Architek Std';
+    font-family: 'NB Architekt Std';
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -50,7 +50,7 @@ nav.nav-estatico {
 }
 
 .numero-grupo {
-    color: #888;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.75rem;
 }
 
@@ -67,11 +67,11 @@ nav.nav-estatico {
 .indice-label {
     padding: 8px 12px;
     background-color: rgba(255, 255, 255, 0.1);
-    color: white;
+    color: #fff;
     font-size: 12px;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'NB Architek Std';
+    font-family: 'NB Architekt Std';
     display: flex;
     align-items: center;
     gap: 8px;
@@ -105,8 +105,8 @@ nav.nav-estatico {
     pointer-events: none;
     transition: all 0.5s ease;
     z-index: 10000;
-    font-family: "NB Architekt Std", monospace;
-    color: #FFF;
+    font-family: 'NB Architekt Std';
+    color: #fff;
     font-size: clamp(12px, 0.85vw, 16px);
     max-height: calc(100vh - 4.2vw);
     overflow: auto;
