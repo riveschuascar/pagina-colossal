@@ -91,7 +91,6 @@
     z-index: 5;
 }
 
-/* Partners content area */
 .partners-content {
     display: flex;
     padding: 40px 0;
@@ -109,7 +108,6 @@
 
 .partner-details-header {
     color: #ef7a37;
-    /* Using the orange color from your gradient */
     font-family: 'NB Architekt Std', monospace;
     margin-bottom: 40px;
     font-size: 14px;
@@ -155,7 +153,7 @@
     }
 
     .partners-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .partner-logo {
